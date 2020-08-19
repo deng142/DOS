@@ -1,0 +1,3 @@
+查看：look
+   电脑信息：/+computer
+打开文件：open
