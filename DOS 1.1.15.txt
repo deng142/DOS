@@ -168,13 +168,20 @@ def fun1():
         if a=='back':
             fun1()
     if a=='software' or 'sw':     #条件判断
+        fun4()
+    else:
+        time.sleep(0.15)
+        print("输入格式错误")
+        time.sleep(0.75)
+        fun1()
+def fun4():
         print("waiting...")
         time.sleep(random.chioce([1,2,3]))#随机选择时间
         print("可用的软件:")
-        print("  1:谷歌浏览器")
+        print("  1:谷歌浏览器   2:下载(from Internt)")
         print("  2:返回 (或输入 <back>)")
         answer_3 = input('c:> ')
-        if answer_3:
+        if answer_3==1:
             print("waiting...")
             time.sleep(random([2,3,4]))
             print("欢迎使用谷歌浏览器")
@@ -209,11 +216,30 @@ def fun1():
                 answer_5 = input('==> ')
                 if answer_5=='back':
                     fun1()
-    else:
-        time.sleep(0.15)
-        print("输入格式错误")
-        time.sleep(0.75)
-        fun1()
+        if answer_3=='2':
+            time.sleep(0.5)
+            print("waiting...")
+            time.sleep(random.chioce([1,2,3]))
+            print("欢迎使用DOS下载器   [迅雷提供下载服务]")
+            time.sleep(1)
+            print("请选择要下载的软件:")
+            print("1:腾讯视频   2:爱奇艺视频播放器")
+            answer_4 = int(input('==>'))
+            print("wating...")
+            time.sleep(random.chioce([1,2,3,4,5]))
+            print("下载中")
+            g = random.chioce([1,2])
+            print("网速: ",g,"MB/s ")
+            time.sleep(random.randint[3,15])
+            print(":( 下载失败")
+            time.sleep(1)
+            fun1()
+        if answer_3=='back':
+            fun1()
+        else:
+            print("格式错误")
+            time.sleep(1)
+            fun4()
 def fun2():
             print("确定吗?")
             print("1:退出   2:我知道我在做什么!   3:查看可能存在的危险")
