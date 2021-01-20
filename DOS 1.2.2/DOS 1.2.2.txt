@@ -1,0 +1,461 @@
+import time     #导入时间模块
+import random     #导入随机选择模块
+def fun0():     #定义片段0
+    print("正在进入DOS系统")
+    time.sleep(random.choice([2,3,4,5,6,7,8]))     #时间间隔<随机选择时间间隔>
+    print("成功进入")
+    fun1()
+def fun1():
+    print("请输入命令:")
+    time.sleep(0.25)
+    print("查看信息输入 <input content>")
+    DOS_1 = (input('c:> '))     #定义 a
+
+    if DOS_1=='time' or 'clock' or 'tm' or 'ck':
+        print("现在时间为",time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(time.time())),"")
+        time.sleep(0.5)
+        fun1()
+    if DOS_1=='find internt':
+        randim_1 = random.randint[1,10]
+        if random_1==1:
+            print("没有找到可连接的 internt")
+            time.sleep(1)
+            fun1()
+        else:
+            print("internt 连接正常")
+            time.sleep(0.75)
+            fun1()
+    if DOS_1=='play game' or 'pg':
+        print("游戏已准备")
+        print("请输入你想玩的次数:")
+        h_4 = int(input('==>'))
+        print("5秒后开始")
+        h_5 = 5
+        while h_5 > 0:
+            print("还剩",h_5,"秒")
+            time.sleep(1)
+            h_5 = H_5 - 1
+        print("游戏开始!")
+        while h_4 > 0:
+            fun4()
+    if DOS_1=='pay':
+        print("waiting...")
+        time.sleep(random.choice([1,2,3]))
+        print("请选择你要的服务:")
+        time.sleep(0.5)
+        print("1：转账   2：进账   3：充值")
+        pay_1 = int(input('C:/pay==> '))
+        if pay_1==1:
+            print("请输入被转账者的转账密码")
+            pay_2 = int(input('==> '))
+            int(input('转账金额(元)==> '))
+            time.sleep(1)
+            print("转账成功")
+            fun1()
+        if pay_1==2:
+            pay_3 = random.randint[1,9]
+            pay_4 = random.randint[1,9]
+            pay_5 = random.randint[1,9]
+            pay_6 = random.randint[1,9]
+            pay_7 = random.randint[1,9]
+            print("转账密码为 ",pay_3,"",pay_4,"",pay_5,"",pay_6,"",pay_7,"")
+            print("输入 <back> 退出")
+            pay_8 = input('==> ')
+            if pay_8:
+                fun1()
+        if pay_1==3:
+            input('账户号码==> ')
+            input('密码==>')
+            time.sleep(1)
+            print("输入金额")
+            pay_9 = int(input('==> '))
+            time.sleep(2)
+            print("充值成功")
+            fun1()
+        else:
+            print("输入错误，请输入数字")
+            fun1()
+    if DOS_1=='shut down' or 'sd':
+        print("关机中...")
+        print("出现乱码后，可以关闭界面")
+        time.sleep(1)
+        print("thanks for use DOS ")
+        fun5()
+    if DOS_1=='calculation' or 'cn':
+        print("计算系统打开中...")
+        time.sleep(0.095)
+        print("Laoding...")
+        time.sleep(0.35)
+        print("计算系统已打开")
+        time.sleep(0.155)
+        print("本次使用的 计算器[1.0] 只支持加法")
+        time.sleep(0.25)
+        print("使用愉快!")
+        time.sleep(0.25)
+        print("请赋值 a,b ")
+        a = int(input('a==>'))
+        time.sleep(0.155)
+        print("赋值成功！   a==", a, "")
+        b = int(input('b==>'))
+        time.sleep(0.155)
+        print("赋值成功!   b==", b, "")
+        time.sleep(1)
+        print("是否开始运算？")
+        print("1：是   2：不是")
+        c = int(input('==>'))
+        if c == 1:
+            d = a + b
+            time.sleep(0.25)
+            print("已计算出结果")
+            time.sleep(0.7)
+            print("请选择：")
+            print("1:查看计算结果   2：否")
+            e = int(input('==>'))
+            if e == 1:
+                print("计算结果为", d, "")
+            if e == 2:
+                print("并未显示结果")
+        if c == 2:
+            print("未运算", a, "+", b, "")
+    if DOS_1=='DOS safetyer' or 'Ds':
+        time.sleep(1)
+        print("waiting...")
+        time.sleep(random.randint[1,4])
+        print("欢迎使用 DOS safetyer ")
+        time.sleep(0.5)
+        print("请选择要进行的操作:")
+        print("1:查杀   2:引擎设置")
+        h_1 = int(input('c:>'))
+        if h_1==1:
+            time.sleep(0.25)
+            print("  请选择要查杀的范围:")
+            print("   1:全盘查杀(默认)   2:定点查杀")
+            h_2 = int(input('c:>'))
+            if h_2==1:
+                print("waiting...")
+                time.seep(1)
+                print("开始查杀")
+                time.sleep(1)
+                pritn("waiting...")
+                time.sleep(random.chioce([4,5,6,7,8,9]))
+                print("查杀完成")
+                safety_3 = random.randint[1,10]
+                if safty_3==1:
+                    print("出现漏洞")
+                    time.sleep(1)
+                    print("清理完毕")
+                    fun1()
+                else:
+                    print("电脑健康")
+                    fun1()
+            if h_2==2:
+                print("抱歉,暂不支持")
+                fun1()
+        if h_1==2:
+            print("请选择引擎:")
+            time.sleep(0.5)
+            print("1:小红伞查杀引擎   2:电脑管家引擎   3:卡巴斯基高级引擎(付费)")
+            h_3 = int(input('==>'))
+            if h_3==3:
+                input('请输入密阴: ')
+                time.sleep(4)
+                print("引擎已启用")
+                fun1()
+            else:
+                time.sleep(3)
+                print("引擎已启用")
+                fun1()
+            fun1()
+    if DOS_1=='look' or 'lk':     #条件判断
+        time.sleep(0.75)
+        print("What do you want to see:")
+        print("   1:computer")
+        b = input('c:\look:>')
+        if b=='computer' or 'com':
+            time.sleep(0.15)
+            print("Laoding")
+            time.sleep(random.choice([1,2,3]))     #随机选择时间
+            print("此电脑：")
+            time.sleep(0.75)
+            print("   配置：")     #配置介绍
+            time.sleep(0.5)
+            print("     DOS版本--------------------------------------------------")
+            print("        DOS 1.2.2 专业版")
+            print("        c 2020 Denrop 保留所有权力。")
+            print("     系统-------------------------------------------------------")
+            print("        处理器：                 Intel(R) Core(TM) i5-9900T CPU @ 2.50GHz 2.55 GHz ")
+            print("                                      XK inveda x-43829 f-CPU denemY-1215")
+            print("        已安装的内存(RAM)  5.50 GB(4.98GB可用)")
+            print("        系统类型：              32位操作系统，基于 x64 的处理器")
+            print("        笔和触控：              没有可用于此显示器的输入")
+            time.sleep(1)
+            print("接下来属于需要保密的资料")
+            time.sleep(0.5)
+            print("请确认周围并无他人(泄密后果自负)")
+            print("接下来你有10秒时间准备")
+            a = 10
+            while a > 0:     #循环
+                print("你还有",a,"秒")
+                time.sleep(1)
+                a = a-1
+            print("时间到！")
+            print("下面开始显示：")
+            time.sleep(0.75)
+            print("计算机名和工作组------------------------------------------------------------------")
+            print("计算机名：   DESKTOP-RN5KGTF")
+            print("计算机全民：6HR59_1572_fdj4FB.26-1fds-5_1af5s5__DESKTOP-RN5KGTF")
+            print("工作组：      WORKGROUP")
+            time.sleep(4.75)
+            print("  ")
+            print("DOS 激活")
+            print("DOS 尚未激活")
+            print("产品ID: 00152 - 22615 - LG262")
+            time.sleep(1)
+            print("显示完毕，输入  <back>  退出")
+            a = input('c:\look\computer:> ')
+            fun1()
+    if DOS_1=='open' 'op':     #条件判断
+        print("What do you want to see?")
+        print("1:.txt  2:.PPTX  3:.DOC  4:all")
+        time.sleep(0.5)
+        a = input('c:\open:>')
+        if a=='.txt' or 'all':     #条件判断
+            print("请选择：")
+            print("  1:新建文本文档.txt")
+            print("  2:新建")
+            a = int(input('c:\open\.txt or all:>'))
+            if a==1:     #条件判断
+                print("内容如下:")
+                time.sleep(0.75)
+                print("thanks for you use DOS 1.0")
+                time.sleep(5)
+                print("输入<back> 退出")
+                a = input('c:\open\back')
+                fun1()
+            if a==2:
+                print("请输入名称:")
+                time.sleep(0.1)
+                name_1 = input('name==> ')
+                time.sleep(0.5)
+                print("输入成功!")
+                print("名字已定义为： ",name_1,"")
+                time.sleep(0.25)
+                print("请输入内容(目前仅支持当输入一段,并且无法保存):")
+                time.sleep(0.2)
+                coutent = input("coutent==> ")
+        if a=='.PPTX' or '.DOC':     #条件判断
+            time.sleep(0.5)
+            print("Sorry  :( ")
+            print("We can not find you want to see")
+            print("Because DOS 1.0 can not look these")
+    if DOS_1=='activation DOS' or 'ad':
+        print("是否已激活?")
+        print("1:是   2:不是")
+        answer_1 = int(input('==> '))
+        if answer_1==1:
+            print("你的电脑因为已激活而无需激活")
+            time.sleep(1)
+            print("五秒后退出")
+            time_1 = 5
+            time.sleep(2)
+            time_1 = time_1 - 2
+            while time_1 > 0:     #循环
+                print("还剩",time_1,"秒")
+                time_1 = time_1 - 1
+                time.sleep(1)
+            print("已退出")
+            time.sleep(0.5)
+            fun1()     #返回到片段1
+        if answer_1==2:
+            print("是否需要激活?")
+            print("1:是   2:否   3:激活有什么用?")
+            answer_2 = int(input('==> '))
+            if answer_2==1:
+                print("请输入正版账号(或手机号):")
+                numder_1 = input('账号==> ')
+                time.sleep(0.5)
+                print("请输入密码(或收到的验证码):")
+                number_2 = input('==> ')
+                print("为了确保你不是机器人")
+                print("请输入从GitHub上下载的激活码")
+                print("网址: https://github.com/deng142/DOS/blob/master/DOS%201.0.15%E6%BF%80%E6%B4%BB%E7%A0%81.txt")     #验证码网址
+                number_3 = input('==>')
+                file_1 = open(r"C:\Users\NA\Desktop\Python程序\系统\DOS系统\DOS 1.0.15\DOS 1.0.15激活码.txt",'r')
+                file_2 = file_1.read()
+                if file_2==numder_3:
+                    time.sleep(1)
+                    print("Laoding...")
+                    time.sleep(random.chioce([2,3,4]))
+                    print("激活码正确!")
+                    print("已激活  DOS 1.2.2 系统")
+                    print("开始初始化系统")
+                    print("预计需要9到13秒")
+                    d = 0
+                    while d < 100:     #循环
+                        time.sleep(1)
+                        d = d + 10
+                        print("初始化进度:  ",d,"% ")
+                    print("初始化完毕!")
+                    fun1()
+            if answer_2==2:
+                print("已退出")
+                fun1()
+            if answer_2==3:
+                print("激活可以使你更加个性化，并且激活更多功能")
+                time.sleep(3)
+    if DOS_1=='input content' or 'ic':
+        print("可以输入的指令:")
+        print(" | 查看：look 或 lk")
+        print("   | 电脑信息：/+computer")
+        print(" | 打开文件：open 或 op")
+        print(" | 激活: activation DOS 或 ad")
+        time.sleep(5)
+        print("退出输入 <back>")
+        a = input('==>')
+        if a=='back':
+            fun1()
+    if DOS_1=='software' or 'sw':     #条件判断
+        print("waiting...")
+        time.sleep(random.chioce([1,2,3]))#随机选择时间
+        print("可用的软件:")
+        print("  1:谷歌浏览器")
+        print("  2:返回 (或输入 <back>)")
+        answer_3 = input('c:> ')
+        if answer_3:
+            print("waiting...")
+            time.sleep(random([2,3,4]))
+            print("欢迎使用谷歌浏览器")
+            time.sleep(0.1)
+            print("请设置最大物理内存(单位:MB):")
+            memor_1 = int(input('请输入数字(推荐1024MB)==>'))
+            print("正在进入")
+            time.sleep(0.1)
+            print("注:由于这是最新 DOS 版本，所以搜索后可能会闪退")
+            print("新版本会尽量解决该问题")
+            time.sleep(random([1,2,3]))
+            time.sleep(0.25)
+            print("输入一段网址:")
+            answer_4 = input('网址==> ')
+            time.sleep(random.chioce([1,2,3]))
+            if answer_4=='random.org':
+                print("请输入随机方式:")
+                print(" 1:给定范围   2:完全随机")
+                answer_5 = int(input('==> '))
+                if answer_5==1:
+                    answer_6 = int(input('最小值==> '))
+                    time.sleep(0.5)
+                    answer_7 = int(input('最大值==> '))
+                    time.sleep(1)
+                    answer_8 = random.randint[answer_6,answer_7]
+                    print("随机结果为",answer_8,"")
+                    fun1()
+            else:
+                 print("已有搜索结果")
+                 safety_1 = random.randint(1,1000)
+                 if safety_1==50:
+                    print("警告!!!")
+                    print("检测到搜索结果含有恶意程序")
+                    print("1:继续   2:退出")
+                    e = input('==>')
+                    if e==1:
+                        fun2()
+                    if e==2:
+                        fun1()
+                 else:
+                      time.sleep(0.5)
+                      print("程序异常退出 :(")
+                      time.sleep(1)
+                      print("输入 <back> 以退出")
+                      answer_5 = input('==> ')
+                      if answer_5=='back':
+                          fun1()
+        else:
+            time.sleep(0.15)
+            print("输入格式错误")
+            time.sleep(0.75)
+            fun1()
+def fun2():
+            print("确定吗?")
+            print("1:退出   2:我知道我在做什么!   3:查看可能存在的危险")
+            f = input('==>')
+            if f==1:
+                fun1()
+            if f==2:
+                time.sleep(0.5)
+                print("程序异常退出 :(")
+                time.sleep(1)
+                print("输入 <back> 以退出")
+                answer_5 = input('==> ')
+                if answer_5=='back':
+                    fun1()
+            if f==3:
+                safety_2 = random.randint(1,10)
+                if safety_2==1:
+                    print("在运行改网站时一段约20行的代码曾试图改动Wed代码")
+                    time.sleep(1)
+                    print("可能是病毒的概率:15%")
+                if saftey_2==2:
+                    print("在网站运行时出现压缩炸弹,有代码尝试绕过 DOS防火墙 的巡查")
+                    time.sleep(1)
+                    print("可能是病毒的概率:30%")
+                if saftey_2==3:
+                    print("在运行网站时有代码未经许可往磁盘写入")
+                    time.sleep(1)
+                    print("是病毒的概率:40%")
+                if saftey_2==5:
+                    time.sleep(2)
+                    print("警告!!!")
+                    print("一段代码(约4.4MB)打开了word文档")
+                    time.sleep(1)
+                    print("并且尝试使用e-mail发送该文档")
+                    print("初步判断为美杜莎病毒")
+                    time.sleep(0.5)
+                    print("该病毒被 DOS防火墙 列为I级危险病毒")
+                    print("系统已经删除有关的所有代码")
+                    print("若造成损失,请谅解")
+                    time.sleep(1)
+                    print("与该网站相关的所有信息(如代码,发布者等)")
+                    print("已全部上报与 DOS安全中心 , DOS病毒预防与控制中心 ")
+                    time.sleep(2)
+                    print("你目前不会有如何困扰,但请保持联络")
+                    time.sleep(1)
+                    print("十秒后退出")
+                    time_2 = 3
+                    time.sleep(7)
+                    while time_2 > 0:
+                        print("",time_2,"秒后退出")
+                        time.sleep(1)
+                        time_2 = time_2 - 1
+                else:
+                    print("在运行代码时有关损坏硬件的指令")
+                    time.sleep(1)
+                    print("是病毒的概率:60%")
+            else:
+                print("请输入数字")
+                fun2()     #返回到片段2
+fun0()     #返回到片段0
+def fun4():
+            math_1 = random.randint(1,50)
+            math_2 = random.randint(1,50)
+            math_3 = math_1 + math_2
+            print(" ",math_1," + ",math_2," = ? ")
+            h_6 = int(input('? = '))
+            if h_6==math_3:
+                fun4()
+            else:
+                print("你失败了")
+                time.sleep(1)
+                fun1()
+def fun5():
+    close_1 = random.randint[1,5]
+    while close_1 > 0:
+        print(".")
+        time.sleep(0.5)
+        print("..")
+        time.sleep(0.5)
+        print("...")
+        time.sleep(0.5)
+        print("....")
+        time.sleep(0.5)
+        print(".....")
+        close_1 = close_1 - 1
